@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="txtDigitOne">+<input type="text" id="txtDigitTwo">
+	<button onClick="Sumar()">Sumar</button>
+	<script src="calculadora.js">
+	</script>
+	<script>
+		function Sumar(){
+			var DigitOne = document.getElementById("txtDigitOne").value;
+			var DigitTwo = document.getElementById("txtDigitTwo").value;
+			var calc = new Calculadora();
+			calc.digitoUno = DigitOne;
+			calc.digitoDos = DigitTwo;
+			alert ("El resultado es = " + calc.Sumar());
+		};
+	</script>
+</body>
+</html>
